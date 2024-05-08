@@ -7,13 +7,23 @@ dockerでの開発をおすすめします。
 Scratch npmというDocker imageをpullして使用してください。
 ※現状これ以外の環境だと、途中でエラーが出ます。（今後改善予定）
 
-以下の３つのリポジトリをクローンしてください。[choi laboratory](https://github.com/Choi-Laboratory)にあります。
+以下の３つのリポジトリをクローンして、npmをインストールし、guiにリンクしてください。[choi laboratory](https://github.com/Choi-Laboratory)にあります。
+```
+git clone https://github.com/Choi-Laboratory/scratch-vm.git
+cd scratch-vm
+npm install
+npm link
+```
 ```
 git clone 
+npm install https://github.com/Choi-Laboratory/scratch-blocks.git
+npm link
 ```
 ```
-git clone 
+git clone https://github.com/Choi-Laboratory/scratch-gui.git
+cd scratch-gui
+npm install
+npm link scratch-vm scratch-blocks
+npm start
 ```
-```
-git clone 
-```
+ここで以下のようになれば、問題ありません。
