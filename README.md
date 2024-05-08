@@ -1,0 +1,2 @@
+# prost_scratch_env
+scratchの新たなブロック作成等を行えるリポジトリです。
