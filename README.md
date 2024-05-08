@@ -15,8 +15,8 @@ npm install
 npm link
 ```
 ```
-git clone 
-npm install https://github.com/Choi-Laboratory/scratch-blocks.git
+git clone https://github.com/Choi-Laboratory/scratch-blocks.git
+npm install 
 npm link
 ```
 ```
