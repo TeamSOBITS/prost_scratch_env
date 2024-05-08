@@ -12,12 +12,12 @@ Scratch npmというDocker imageをpullして使用してください。
 git clone https://github.com/Choi-Laboratory/scratch-vm.git
 cd scratch-vm
 npm install
-npm link
+sudo npm link
 ```
 ```
 git clone https://github.com/Choi-Laboratory/scratch-blocks.git
 npm install 
-npm link
+sudo npm link
 ```
 ```
 git clone https://github.com/Choi-Laboratory/scratch-gui.git
