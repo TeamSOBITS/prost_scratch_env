@@ -6,9 +6,7 @@ Scratchで新たなブロック作成等を行えるリポジトリです。（�
 
 ## How to Use
 dockerでの開発をおすすめします。
-これは[Docker Hub](https://hub.docker.com/)に移動し、SOBITSのアカウントでログインします。
-Scratch npmというDocker imageをpullして使用してください。
-※現状これ以外の環境だと、途中でエラーが出ます。（今後改善予定）
+[docker環境](https://github.com/Choi-Laboratory/scratch_ws)
 
 以下の３つのリポジトリをクローンして、npmをインストールし、guiにリンクしてください。[choi laboratory](https://github.com/Choi-Laboratory)にあります。
 ```
@@ -19,6 +17,7 @@ sudo npm link
 ```
 ```
 git clone https://github.com/Choi-Laboratory/scratch-blocks.git
+cd scratch-blocks
 npm install 
 sudo npm link
 ```
@@ -83,13 +82,17 @@ npm start
 
 ## Publishing to Scratch data
 以下の順序を進めると、授業で使用しているscratchにdeployすることができます。
+授業用と開発用があるので、注意して下さい
 ※これをするためには権限が必要になります。その時のプロスタの責任者に確認してみてください。
-
+①授業用（学生が使用しているプラットフォームです。触るのは慎重に）
 ```
 npm run build
-```
-```
 npm run deploy
+```
+①開発用（こいつは壊してもOK用）
+```
+npm run build
+npm run deploy -- -e test
 ```
 
 ## Create a Oridinal Block
