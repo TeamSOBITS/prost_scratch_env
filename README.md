@@ -30,7 +30,7 @@ npm install
 
 ※npm startをする前に2箇所の変更が必要です。
 
-① /src/components/alerts/inline-message.cssを編集する。
+① scratch-gui/src/components/alerts/inline-message.cssを編集する。
 
 ```
     .inline-message {
@@ -42,7 +42,7 @@ npm install
     font-size: .8125rem;
 }
 ```
-② /src/components/menu-bar/author-info.css 
+② scratch-gui/src/components/menu-bar/author-info.css 
 ```
     .author-info {
     color: $ui-white;
