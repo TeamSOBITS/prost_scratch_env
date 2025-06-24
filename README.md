@@ -48,7 +48,7 @@ npm install
     color: $ui-white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
-    justify-content: flex-start; //startをflex-endに変更する。
+    justify-content: flex-start; //startをflex-startに変更する。
     align-items: center;
     cursor: default;
 }
