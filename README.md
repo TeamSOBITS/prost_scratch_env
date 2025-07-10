@@ -6,7 +6,9 @@ Scratchで新たなブロック作成等を行えるリポジトリです。（�
 
 ## How to Use
 dockerでの開発をおすすめします。
-[docker環境](https://github.com/Choi-Laboratory/scratch_ws)
+```
+docker pull sobits/scratch_npm:latest
+```
 
 以下の３つのリポジトリをクローンして、npmをインストールし、guiにリンクしてください。[choi laboratory](https://github.com/Choi-Laboratory)にあります。
 ```
@@ -58,12 +60,12 @@ npm install
 npm start
 ```
 
-#### ここで以下のようになれば、正しくnpmが起動できていません。
+#### ここで以下のようにwarningと出れば、正しくnpmが起動できていません。
 <br>
 
 <img src="img/image.png" alt="alt text" width="500"/>
 
-#### 以下のようになれば、正しくnpmが起動できています。
+#### 以下のようにsuccessと出れば、正しくnpmが起動できています。
 <br>
 <img src="img/image-1.png" alt="alt text" width="500"/>
 <br>
@@ -96,7 +98,7 @@ npm run deploy -- -e test
 ```
 
 ## Create a Oridinal Block
-初年次プロジェクト・プロジェクトスタディーズでオリジナルブロックを作成したい場合は以下の２つのファイルを使用します。（src/extensions/scratch3_turtlebot）
+初年次プロジェクト・プロジェクトスタディーズでオリジナルブロックを作成したい場合は以下の２つのファイルを使用します。（scratch-vm/src/extensions/scratch3_turtlebot）
 ```
 index.js
 web_video_viewer.js
