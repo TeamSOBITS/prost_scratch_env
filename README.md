@@ -8,6 +8,7 @@ Scratchで新たなブロック作成等を行えるリポジトリです。（�
 dockerでの開発をする必要があります。
 ```
 docker pull sobits/scratch_npm:latest
+docker run -it --rm -p 8601:8601 -v "$PWD":/usr/src/app sobits/scratch_npm
 ```
 
 以下の３つのリポジトリをクローンして、npmをインストールし、guiにリンクしてください。[choi laboratory](https://github.com/Choi-Laboratory)にあります。
