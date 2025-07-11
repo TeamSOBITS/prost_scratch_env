@@ -5,7 +5,7 @@ Scratchで新たなブロック作成等を行えるリポジトリです。（�
 <br><br>
 
 ## How to Use
-dockerでの開発をおすすめします。
+dockerでの開発をする必要があります。
 ```
 docker pull sobits/scratch_npm:latest
 ```
